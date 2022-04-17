@@ -15,12 +15,4 @@ The application is running at this url: https://sample-python-flask.scalingo.io/
 
 ## Deploy in One Click
 
-[![Deploy to Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://my.osc-fr1.scalingo.com/deploy?source=https://github.com/Obysoft2020/scalingotgfreefile)
-
-## Running Locally
-
-Just start docker-compose, with the commande `up`:
-
-```sh
-docker-compose up
-```
+[![Deploy to Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/Obysoft2020/scalingotgfreefile)
