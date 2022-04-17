@@ -506,7 +506,13 @@ def onmessage(update,bot:ObigramClient):
     except Exception as ex:
            print(str(ex))
 
+from flask import Flask
+from flask import render_template
+app = Flask(__name__)
 
+def flask_connect():
+    app.run(host='0.0.0.0', port=5000)
+            
 def main():
     bot_token = os.environ.get('bot_token')
 
@@ -515,6 +521,7 @@ def main():
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
+    bot.startNewThread(flask_connect)
     bot.run()
 
 if __name__ == '__main__':
