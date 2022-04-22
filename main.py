@@ -206,7 +206,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'nautaii'
+        tl_admin_user = 'Luis_Daniel_Diaz'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -470,7 +470,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5102357139:AAHP1PTJGcSDm2SYyr9hbPsWoTzey0ufmvs'
+    bot_token = '5287857041:AAFgekXqf2-ppIVH0sesCY7u2zuutqzZZnY'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
